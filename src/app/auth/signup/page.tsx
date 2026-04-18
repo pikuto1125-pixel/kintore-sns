@@ -3,6 +3,7 @@ import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import Link from "next/link";
 import { Dumbbell, Mail, Lock, User, AlertCircle, CheckCircle } from "lucide-react";
+import { toJapaneseError } from "@/lib/error-messages";
 
 export default function SignupPage() {
   const [email, setEmail] = useState("");
@@ -25,7 +26,7 @@ export default function SignupPage() {
     });
 
     if (error) {
-      setError(error.message);
+      setError(toJapaneseError(error.message));
       setLoading(false);
     } else {
       setSuccess(true);

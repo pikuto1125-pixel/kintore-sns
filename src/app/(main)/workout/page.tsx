@@ -14,7 +14,6 @@ export default function WorkoutPage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
-  const supabase = createClient();
   const { exercises, timerSeconds, getBadges, setVerified, reset } = useWorkoutStore();
 
   const totalReps = exercises.reduce((sum, ex) => sum + ex.reps * ex.sets, 0);
@@ -28,6 +27,7 @@ export default function WorkoutPage() {
     setSubmitting(true);
     setError(null);
 
+    const supabase = createClient();
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) { setError("ログインが必要です"); setSubmitting(false); return; }
 

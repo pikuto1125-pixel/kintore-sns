@@ -4,6 +4,7 @@ import { createClient } from "@/lib/supabase/client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Dumbbell, Mail, Lock, AlertCircle } from "lucide-react";
+import { toJapaneseError } from "@/lib/error-messages";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ export default function LoginPage() {
     const supabase = createClient();
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     if (error) {
-      setError(error.message);
+      setError(toJapaneseError(error.message));
       setLoading(false);
     } else {
       router.push("/feed");
