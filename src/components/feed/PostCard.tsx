@@ -5,11 +5,15 @@ import { useTranslation } from "react-i18next";
 import "@/lib/i18n/config";
 import type { PostWithProfile } from "@/types/database";
 import Badge from "@/components/ui/Badge";
-import TranslateButton from "./TranslateButton";
 import { Heart, Clock, Trash2 } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
-import { ja } from "date-fns/locale";
+import { ja, enUS, es, fr, de, zhCN, ko, ptBR, ar } from "date-fns/locale";
+import type { Locale } from "date-fns";
 import Link from "next/link";
+
+const DATE_LOCALES: Record<string, Locale> = {
+  ja, en: enUS, es, fr, de, zh: zhCN, ko, pt: ptBR, ar,
+};
 
 type Props = { post: PostWithProfile; currentUserId: string | null; onDelete?: (id: string) => void };
 
@@ -20,6 +24,7 @@ export default function PostCard({ post, currentUserId, onDelete }: Props) {
   const [deleteLoading, setDeleteLoading] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const { t, i18n } = useTranslation(["common", "feed"]);
+  const dateLocale = DATE_LOCALES[i18n.language] ?? enUS;
 
   const isOwner = currentUserId === post.user_id;
   const avatar = post.profiles.avatar_url && post.profiles.avatar_url.length <= 4 ? post.profiles.avatar_url : null;
@@ -66,7 +71,7 @@ export default function PostCard({ post, currentUserId, onDelete }: Props) {
           </Link>
           <div className="flex items-center gap-1 text-xs" style={{ color: "var(--text-secondary)" }}>
             <Clock className="w-3 h-3" />
-            {formatDistanceToNow(new Date(post.created_at), { addSuffix: true, locale: ja })}
+            {formatDistanceToNow(new Date(post.created_at), { addSuffix: true, locale: dateLocale })}
           </div>
         </div>
         {isOwner && (
@@ -78,7 +83,7 @@ export default function PostCard({ post, currentUserId, onDelete }: Props) {
             onBlur={() => setTimeout(() => setConfirmDelete(false), 200)}
           >
             <Trash2 className="w-3.5 h-3.5" />
-            {confirmDelete ? "本当に削除?" : t("common:delete")}
+            {confirmDelete ? `${t("common:confirm")}?` : t("common:delete")}
           </button>
         )}
       </div>
@@ -99,8 +104,6 @@ export default function PostCard({ post, currentUserId, onDelete }: Props) {
           {post.badges.map((b) => <Badge key={b} badge={b as never} />)}
         </div>
       )}
-
-      <TranslateButton content={post.content} targetLang={i18n.language} />
 
       <div className="flex items-center gap-4 pt-1 border-t" style={{ borderColor: "var(--border)" }}>
         <button

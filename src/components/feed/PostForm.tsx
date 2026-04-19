@@ -52,12 +52,12 @@ export default function PostForm({ profile, onPost }: Props) {
           <Lock className="w-6 h-6" style={{ color: "var(--accent)" }} />
         </div>
         <div>
-          <div className="font-bold mb-1" style={{ color: "var(--text-primary)" }}>投稿するにはトレーニングが必要です</div>
-          <div className="text-sm" style={{ color: "var(--text-secondary)" }}>24時間以内にトレーニングを認証すると投稿できます</div>
+          <div className="font-bold mb-1" style={{ color: "var(--text-primary)" }}>{t("feed:locked")}</div>
+          <div className="text-sm" style={{ color: "var(--text-secondary)" }}>{t("feed:lockedBody")}</div>
         </div>
         <Link href="/workout" className="flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wider transition-all hover:opacity-90"
           style={{ background: "var(--accent)", color: "white", boxShadow: "0 0 16px var(--accent-glow)" }}>
-          <Dumbbell className="w-4 h-4" />今すぐトレーニング
+          <Dumbbell className="w-4 h-4" />{t("feed:startTraining")}
         </Link>
       </div>
     );

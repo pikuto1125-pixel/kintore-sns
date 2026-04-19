@@ -26,7 +26,10 @@
     "expiryBody": "トレーニングを記録して投稿権を更新しよう",
     "noPost": "まだ投稿がありません", "beFirst": "最初のトレーニングログを投稿しよう！",
     "verified": "認証済みトレーニング", "chars": "文字",
-    "imageUrl": "画像URL（任意）", "imageUrlPlaceholder": "https://..."
+    "imageUrl": "画像URL（任意）", "imageUrlPlaceholder": "https://...",
+    "locked": "投稿するにはトレーニングが必要です",
+    "lockedBody": "24時間以内にトレーニングを認証すると投稿できます",
+    "startTraining": "今すぐトレーニング"
   },
   "workout": {
     "title": "トレーニング認証", "subtitle": "条件をクリアして投稿権を取得しよう",

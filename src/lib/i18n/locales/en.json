@@ -26,7 +26,10 @@
     "expiryBody": "Log a workout to renew your posting rights",
     "noPost": "No posts yet", "beFirst": "Be the first to post a training log!",
     "verified": "Verified workout", "chars": "chars",
-    "imageUrl": "Image URL (optional)", "imageUrlPlaceholder": "https://..."
+    "imageUrl": "Image URL (optional)", "imageUrlPlaceholder": "https://...",
+    "locked": "You need to train to post",
+    "lockedBody": "Verify a workout within 24 hours to unlock posting",
+    "startTraining": "Start Training Now"
   },
   "workout": {
     "title": "Workout Verification", "subtitle": "Complete conditions to unlock posting",

@@ -20,7 +20,8 @@
       "Bash(git remote *)",
       "Bash(git push *)",
       "Bash(start https://vercel.com/account/tokens)",
-      "Bash(git commit -m 'fix: change cron to daily for Vercel Hobby plan *)"
+      "Bash(git commit -m 'fix: change cron to daily for Vercel Hobby plan *)",
+      "Bash(git commit *)"
     ]
   }
 }
