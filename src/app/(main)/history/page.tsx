@@ -1,6 +1,8 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import Badge from "@/components/ui/Badge";
+import CalendarHeatmap from "@/components/stats/CalendarHeatmap";
+import WorkoutChart from "@/components/stats/WorkoutChart";
 import type { WorkoutBadge, WorkoutExercise } from "@/types/database";
 import { Clock, Dumbbell, Flame, CheckCircle } from "lucide-react";
 import { formatDistanceToNow, format } from "date-fns";
@@ -55,6 +57,9 @@ export default async function HistoryPage() {
           </div>
         ))}
       </div>
+
+      <CalendarHeatmap dates={(sessions ?? []).map((s) => s.created_at)} />
+      {sessions && sessions.length > 0 && <WorkoutChart sessions={sessions as never} />}
 
       {/* Session list */}
       {!sessions || sessions.length === 0 ? (

@@ -1,0 +1,77 @@
+{
+  "common": {
+    "save": "Save", "cancel": "Cancel", "delete": "Delete", "loading": "Loading...",
+    "submit": "Submit", "back": "Back", "confirm": "Confirm", "close": "Close",
+    "error": "An error occurred", "success": "Success", "noData": "No data",
+    "follow": "Follow", "unfollow": "Unfollow", "followers": "Followers",
+    "following": "Following", "posts": "Posts", "reps": "reps", "days": "days",
+    "translate": "Translate", "translating": "Translating...", "original": "Show original",
+    "rank": "Rank", "streak": "Streak", "workouts": "Workouts"
+  },
+  "nav": {
+    "feed": "Feed", "workout": "Workout", "history": "History",
+    "notifications": "Notifications", "ranking": "Ranking", "profile": "Profile", "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login", "signup": "Sign Up", "email": "Email",
+    "password": "Password", "username": "Username", "loggingIn": "Logging in...",
+    "signingUp": "Signing up...", "noAccount": "No account?", "hasAccount": "Already have an account?",
+    "createAccount": "Create Account", "checkEmail": "Check your email",
+    "checkEmailBody": "Click the link in your email to activate your account."
+  },
+  "feed": {
+    "title": "Feed", "placeholder": "Share today's workout!",
+    "post": "Post", "posting": "Posting...", "lastTrained": "Last trained",
+    "expiryWarning": "{{hours}} hours left to post",
+    "expiryBody": "Log a workout to renew your posting rights",
+    "noPost": "No posts yet", "beFirst": "Be the first to post a training log!",
+    "verified": "Verified workout", "chars": "chars",
+    "imageUrl": "Image URL (optional)", "imageUrlPlaceholder": "https://..."
+  },
+  "workout": {
+    "title": "Workout Verification", "subtitle": "Complete conditions to unlock posting",
+    "conditions": "Requirements", "timer": "Run timer for at least 1 minute",
+    "minReps": "Complete at least 30 total reps", "minExercise": "Add at least 1 exercise",
+    "current": "Current", "exercise": "Exercise", "sets": "Sets", "repsLabel": "Reps",
+    "addExercise": "Add Exercise", "earnedBadges": "Earned Badges",
+    "verify": "Verify Workout & Unlock Posting", "verifying": "Verifying...",
+    "camera": "Camera Verification (optional)", "startCamera": "Start Camera", "capture": "Capture",
+    "captured": "Photo taken", "timerLabel": "Workout Timer",
+    "start": "Start", "pause": "Pause", "reset": "Reset",
+    "totalReps": "Total", "timerOk": "Timer OK (1+ min)", "repsOk": "Reps OK (30+ reps)"
+  },
+  "profile": {
+    "edit": "Edit Profile", "editSubtitle": "Update your account information",
+    "avatar": "Avatar Emoji", "avatarHint": "Choose an emoji for your avatar",
+    "displayName": "Display Name", "bio": "Bio", "saving": "Saving...",
+    "saved": "Profile saved!", "usernameTaken": "Username is already taken",
+    "usernameShort": "Username must be at least 3 characters",
+    "noWorkouts": "No workout history yet",
+    "startWorkout": "Start your first workout →",
+    "achievements": "Achievements & Titles", "stats": "Stats", "title": "Title",
+    "canPost": "Can Post", "needsTraining": "Needs Training"
+  },
+  "notifications": {
+    "title": "Notifications", "empty": "No notifications yet",
+    "like": "liked your post",
+    "follow": "started following you",
+    "markAll": "Mark all as read", "unread": "unread"
+  },
+  "ranking": {
+    "title": "Streak Ranking", "subtitle": "Top streak athletes",
+    "currentStreak": "Current Streak", "longestStreak": "Longest Streak",
+    "totalWorkouts": "Total Workouts", "noRanking": "No ranking data yet"
+  },
+  "history": {
+    "title": "Workout History", "subtitle": "Past session records",
+    "sessions": "Total Sessions", "totalReps": "Total Reps", "totalTime": "Total Time",
+    "minutes": "min", "verified": "Verified", "exercises": "exercises",
+    "empty": "No workout history yet"
+  },
+  "challenge": {
+    "title": "Challenges", "create": "Create Challenge", "accept": "Accept",
+    "decline": "Decline", "vs": "VS", "goal": "Goal", "progress": "Progress",
+    "ends": "Ends", "pending": "Pending", "active": "Active", "completed": "Done",
+    "won": "You won!", "lost": "You lost", "opponent": "Opponent", "myProgress": "My Progress"
+  }
+}

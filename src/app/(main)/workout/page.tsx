@@ -56,6 +56,9 @@ export default function WorkoutPage() {
       return;
     }
 
+    // Update streak
+    await supabase.rpc("update_streak", { uid: user.id });
+
     setVerified(true, session.id);
     router.push("/feed");
   };

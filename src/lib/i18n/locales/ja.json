@@ -1,0 +1,77 @@
+{
+  "common": {
+    "save": "保存", "cancel": "キャンセル", "delete": "削除", "loading": "読み込み中...",
+    "submit": "送信", "back": "戻る", "confirm": "確認", "close": "閉じる",
+    "error": "エラーが発生しました", "success": "成功しました", "noData": "データがありません",
+    "follow": "フォロー", "unfollow": "フォロー解除", "followers": "フォロワー",
+    "following": "フォロー中", "posts": "投稿", "reps": "rep", "days": "日",
+    "translate": "翻訳", "translating": "翻訳中...", "original": "原文に戻す",
+    "rank": "ランク", "streak": "連続記録", "workouts": "トレーニング回数"
+  },
+  "nav": {
+    "feed": "フィード", "workout": "トレーニング", "history": "履歴",
+    "notifications": "通知", "ranking": "ランキング", "profile": "プロフィール", "logout": "ログアウト"
+  },
+  "auth": {
+    "login": "ログイン", "signup": "新規登録", "email": "メールアドレス",
+    "password": "パスワード", "username": "ユーザー名", "loggingIn": "ログイン中...",
+    "signingUp": "登録中...", "noAccount": "アカウントがない?", "hasAccount": "すでにアカウントがある?",
+    "createAccount": "アカウントを作成", "checkEmail": "確認メールを送信しました",
+    "checkEmailBody": "メールのリンクをクリックしてアカウントを有効化してください。"
+  },
+  "feed": {
+    "title": "フィード", "placeholder": "今日のトレーニングをシェアしよう！",
+    "post": "投稿", "posting": "投稿中...", "lastTrained": "最終トレーニング",
+    "expiryWarning": "投稿権の期限まで残り {{hours}} 時間",
+    "expiryBody": "トレーニングを記録して投稿権を更新しよう",
+    "noPost": "まだ投稿がありません", "beFirst": "最初のトレーニングログを投稿しよう！",
+    "verified": "認証済みトレーニング", "chars": "文字",
+    "imageUrl": "画像URL（任意）", "imageUrlPlaceholder": "https://..."
+  },
+  "workout": {
+    "title": "トレーニング認証", "subtitle": "条件をクリアして投稿権を取得しよう",
+    "conditions": "認証条件", "timer": "タイマー1分以上計測する",
+    "minReps": "合計30rep以上のトレーニング", "minExercise": "種目を1つ以上追加する",
+    "current": "現在", "exercise": "種目", "sets": "セット", "repsLabel": "レップ",
+    "addExercise": "種目を追加", "earnedBadges": "獲得バッジ",
+    "verify": "トレーニングを認証して投稿権を取得", "verifying": "認証中...",
+    "camera": "カメラ認証（任意）", "startCamera": "カメラを起動", "capture": "撮影する",
+    "captured": "撮影完了", "timerLabel": "トレーニングタイマー",
+    "start": "スタート", "pause": "一時停止", "reset": "リセット",
+    "totalReps": "合計", "timerOk": "タイマー条件クリア（1分以上）", "repsOk": "レップ条件クリア（30rep以上）"
+  },
+  "profile": {
+    "edit": "プロフィール編集", "editSubtitle": "アカウント情報を更新できます",
+    "avatar": "アバター絵文字", "avatarHint": "絵文字を選んでアバターにしよう",
+    "displayName": "表示名", "bio": "自己紹介", "saving": "保存中...",
+    "saved": "プロフィールを保存しました", "usernameTaken": "このユーザー名はすでに使われています",
+    "usernameShort": "ユーザー名は3文字以上で入力してください",
+    "noWorkouts": "まだトレーニング記録がありません",
+    "startWorkout": "今すぐトレーニングを始める →",
+    "achievements": "称号・バッジ", "stats": "統計", "title": "称号",
+    "canPost": "投稿可", "needsTraining": "要トレーニング"
+  },
+  "notifications": {
+    "title": "通知", "empty": "通知はありません",
+    "like": "があなたの投稿にいいねしました",
+    "follow": "があなたをフォローしました",
+    "markAll": "全て既読にする", "unread": "未読"
+  },
+  "ranking": {
+    "title": "ストリークランキング", "subtitle": "連続記録トップ選手",
+    "currentStreak": "現在の連続記録", "longestStreak": "最長連続記録",
+    "totalWorkouts": "総トレーニング回数", "noRanking": "まだランキングデータがありません"
+  },
+  "history": {
+    "title": "トレーニング履歴", "subtitle": "過去のセッション記録",
+    "sessions": "総セッション", "totalReps": "総レップ数", "totalTime": "総トレ時間",
+    "minutes": "分", "verified": "認証済", "exercises": "種目",
+    "empty": "まだトレーニング記録がありません"
+  },
+  "challenge": {
+    "title": "チャレンジ", "create": "チャレンジを作成", "accept": "受け入れる",
+    "decline": "断る", "vs": "VS", "goal": "目標", "progress": "進捗",
+    "ends": "終了", "pending": "承認待ち", "active": "進行中", "completed": "完了",
+    "won": "勝利！", "lost": "惜敗", "opponent": "相手", "myProgress": "自分の進捗"
+  }
+}
